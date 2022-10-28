@@ -91,7 +91,7 @@ section .text {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 40rem;
+  margin-top: 60rem;
   font-size: 40px;
   text-align: center;
   color: #009ffd;
@@ -102,11 +102,14 @@ section .text {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  margin-top: 50rem;
+  margin-top: 90rem;
   height: 50vh;
 }
 
-.box {
+.box,
+.box2,
+.box3,
+.box4 {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -119,84 +122,26 @@ section .text {
   cursor: pointer;
 }
 
-.box h2 {
+.box h2,
+.box2 h2,
+.box3 h2,
+.box4 h2 {
   color: #ddd;
   font-size: 50px;
   text-align: center;
 }
 
-.box img {
+.box img,
+.box2 img,
+.box3 img,
+.box4 img {
   width: 30vw;
   height: 40vh;
   border-radius: 20rem;
 }
 
-.container2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  margin-top: 5rem;
-  height: 50vh;
-}
-
-.box2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: -20rem;
-  background-color: #00a4e4;
-  width: 85vw;
-  height: 50vh;
-  border-radius: 20rem;
-}
-
-.box2 img {
-  width: 30vw;
-  height: 40vh;
-  border-radius: 20rem;
-}
-
-.box2 h2 {
-  text-align: center;
-  font-size: 50px;
-  color: #ddd;
-}
-
-.containter3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  margin-top: 5rem;
-  height: 50vh;
-}
-
-.box3 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: -20rem;
-  background-color: #00a4e4;
-  width: 85vw;
-  height: 50vh;
-  border-radius: 20rem;
-}
-
-.box3 img {
-  width: 30vw;
-  height: 40vh;
-  border-radius: 20rem;
-}
-
-.box3 h2 {
-  text-align: center;
-  font-size: 50px;
-  color: #ddd;
-}
-
+.container2,
+.container3,
 .container4 {
   display: flex;
   align-items: center;
@@ -204,30 +149,6 @@ section .text {
   flex-wrap: nowrap;
   margin-top: 5rem;
   height: 50vh;
-}
-
-.box4 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: -20rem;
-  background-color: #00a4e4;
-  width: 85vw;
-  height: 50vh;
-  border-radius: 20rem;
-}
-
-.box4 img {
-  width: 30vw;
-  height: 40vh;
-  border-radius: 20rem;
-}
-
-.box4 h2 {
-  text-align: center;
-  color: #ddd;
-  font-size: 50px;
 }
 
 main h2 {
@@ -240,51 +161,7 @@ main h2 {
   margin-top: 30vh;
 }
 
-.safe1 {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  margin-top: 15vh;
-}
-
-.safe1 div {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  background-color: #292828;
-  border: 2px solid black;
-  border-radius: 10rem;
-  width: 40vw;
-  height: 30vh;
-  cursor: pointer;
-  box-shadow: 0px 0px 100px 0px rgb(92, 92, 93);
-}
-
-.safe1 div h3 {
-  text-align: center;
-  font-size: 15px;
-  color: white;
-}
-
-.access {
-  display: flex;
-  flex-direction: column;
-}
-
-.support {
-  display: flex;
-  flex-direction: column;
-}
-
-.safe1 div img {
-  position: relative;
-  text-align: center;
-  margin-top: 50px;
-  width: 5vw;
-  height: 10vh;
-}
-
+.safe1,
 .safe2 {
   display: flex;
   justify-content: center;
@@ -292,6 +169,7 @@ main h2 {
   margin-top: 15vh;
 }
 
+.safe1 div,
 .safe2 div {
   display: flex;
   justify-content: center;
@@ -306,28 +184,32 @@ main h2 {
   box-shadow: 0px 0px 100px 0px rgb(92, 92, 93);
 }
 
+.safe1 div h3,
 .safe2 div h3 {
   text-align: center;
   font-size: 15px;
   color: white;
 }
 
-.privacy {
+.access,
+.support {
   display: flex;
   flex-direction: column;
 }
 
-.authentication {
-  display: flex;
-  flex-direction: column;
-}
-
+.safe1 div img,
 .safe2 div img {
   position: relative;
   text-align: center;
   margin-top: 50px;
   width: 5vw;
   height: 10vh;
+}
+
+.privacy,
+.authentication {
+  display: flex;
+  flex-direction: column;
 }
 
 .safe1 .access:hover {
@@ -362,25 +244,15 @@ section h3 {
   margin-top: 15vh;
 }
 
-section .recomendation1, .recomendation2 {
+section .recomendation1,
+section .recomendation2 {
   display: flex;
   flex-direction: column;
   align-content: space-around;
   align-items: center;
 }
 
-.recomendation1 div {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  background-color: #292828;
-  border-radius: 10rem;
-  margin: 5vh;
-  width: 60vw;
-  height: 60vh;
-}
-
+.recomendation1 div,
 .recomendation2 div {
   display: flex;
   justify-content: center;
@@ -393,25 +265,14 @@ section .recomendation1, .recomendation2 {
   height: 60vh;
 }
 
-.opinion1 img {
-  width: 60vw;
-  height: 60vh;
-  border-radius: 10rem;
-}
-
-.opinion1 p {
-  display: none;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
+.opinion1 img,
 .opinion2 img {
   width: 60vw;
   height: 60vh;
   border-radius: 10rem;
 }
 
+.opinion1 p,
 .opinion2 p {
   display: none;
   text-align: center;
@@ -419,25 +280,14 @@ section .recomendation1, .recomendation2 {
   color: white;
 }
 
-.opinion3 img {
-  width: 60vw;
-  height: 60vh;
-  border-radius: 10rem;
-}
-
-.opinion3 p {
-  display: none;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
+.opinion3 img,
 .opinion4 img {
   width: 60vw;
   height: 60vh;
   border-radius: 10rem;
 }
 
+.opinion3 p,
 .opinion4 p {
   display: none;
   text-align: center;
